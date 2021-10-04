@@ -1,10 +1,10 @@
 <?php 
     $server = "localhost"; 
-    $user = "root"; 
+    $username = "root"; 
     $password = ""; 
     $nama_database = "dbpus"; 
 
-    $db = mysqli_connect($server, $user, $password, $nama_database); 
+    $db = mysqli_connect($server, $username, $password, $nama_database); 
     if( !$db ) {
         die("Gagal terhubung dengan database: " . mysqli_connect_error()); 
     }
