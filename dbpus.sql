@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 02, 2021 at 04:19 PM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 7.4.22
+-- Generation Time: Nov 07, 2021 at 10:24 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.4.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -53,7 +53,7 @@ CREATE TABLE `tbanggota` (
   `jeniskelamin` varchar(10) CHARACTER SET latin1 NOT NULL,
   `alamat` varchar(40) CHARACTER SET latin1 NOT NULL,
   `status` varchar(20) CHARACTER SET latin1 NOT NULL,
-  `foto` varchar(35) CHARACTER SET latin1 NOT NULL
+  `foto` varchar(255) CHARACTER SET latin1 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -62,16 +62,7 @@ CREATE TABLE `tbanggota` (
 
 INSERT INTO `tbanggota` (`idanggota`, `nama`, `jeniskelamin`, `alamat`, `status`, `foto`) VALUES
 ('AG001', 'Ji Chang Wook', 'Pria', 'Korea Selatan', 'Meminjam', 'AG001.jpg'),
-('AG002', 'Rosabela Izzah', 'Wanita', 'Pasuruan   ', 'Tidak Meminjam', 'AG002.jpg'),
-('AG003', 'Jefri Nichol', 'Pria', 'Jakarta Pusat', 'Tidak Meminjam', 'AG003.jpg'),
-('AG004', 'Citra Kirana', 'Wanita', 'Bogor', 'Tidak Meminjam', 'AG004.jpg'),
-('AG005', 'Jerome Polin', 'Pria', 'Surabaya', 'Tidak Meminjam', 'AG005.jpg'),
-('AG006', 'Cinta Laura', 'Wanita', 'Jerman', 'Tidak Meminjam', 'AG006.jpg'),
-('AG007', 'Abun Sungkar', 'Pria', 'Bogor\r\n', 'Meminjam', 'AG007.jpg'),
-('AG008', 'Im Yoon Ah', 'Wanita', 'Korea Selatan', 'Meminjam', 'AG008.jpg'),
-('AG009', 'Zayn Malik', 'Pria', 'Pakistan', 'Meminjam', 'AG009.jpg'),
-('AG010', 'Shireen Sungkar', 'Wanita', 'Bogor', 'Meminjam', 'AG010.jpg'),
-('AG011', 'Kaifa Nuriah', 'Wanita', 'Surabaya ', 'Meminjam', 'AG011.jpg');
+('AG002', 'Rosabela Izzah', 'Wanita', 'Pasuruan   ', 'Tidak Meminjam', 'AG002.jpg');
 
 -- --------------------------------------------------------
 
